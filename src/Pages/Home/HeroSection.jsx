@@ -5,7 +5,12 @@ const HeroSection = () => {
     <section id="heroSection" className="hero--section">
       <div className="hero--section--content-box">
         <div className="hero--section--content">
-          <p className="section--title">Hey, I'm Shashannk</p>
+          <h4 className="section--title">
+            Hey, I'm
+            <span className="hero--section--name ">
+              <h4 className="typewriter">Shashannk Deshpande</h4>
+            </span>
+          </h4>
           <h1 className="hero--section--title">
             <span className="hero--section-title-color">Full Stack</span>
             <div>Developer</div>

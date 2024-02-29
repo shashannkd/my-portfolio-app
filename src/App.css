@@ -19,7 +19,7 @@ p {
 }
 
 :root {
-  --primary: #5e3bee;
+  --primary: #4d2ec7;
   --heading-color: #282938;
   --bg-shade: #f5fcff;
   --github: #e62872;
@@ -50,41 +50,43 @@ p {
 }
 
 .btn-outline-primary {
-  color: var(--primary);
+  color: var(--heading-color);
   background-color: var(--white);
-  border: 1px solid var(--primary);
+  border: 3px solid var(--heading-color);
 }
 
 .btn-outline-primary:hover {
-  color: var(--primary);
-  background-color: var(--white);
+  color: var(--white);
+  background-color: var(--heading-color);
 }
 .btn-primary {
   color: var(--white);
   background-color: var(--primary);
-  border: 1px solid var(--primary);
-  font-weight: 500;
+  border: 3px solid var(--primary);
+  font-weight: 700;
 }
 .btn-primary:hover {
   color: var(--primary);
   background-color: var(--white);
-  font-weight: 500;
+  font-weight: 700;
+  border: 3px solid var(--primary);
 }
 
 .btn-github {
   color: var(--white);
-  background-color: var(--github);
-  border: var(--github);
+  background-color: var(--primary);
+  border: var(--primary);
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.95);
   gap: 16px;
+  font-weight: 600;
 }
 
 .btn-github:hover {
-  color: var(--github);
+  color: var(--primary);
   background-color: var(--white);
 }
 
@@ -110,6 +112,18 @@ h3 {
   line-height: 34px;
 }
 
+/*Navbar Styles*/
+img.navbar--logo {
+  height: 50px;
+  width: 50px;
+}
+img.navbar--logo:hover {
+  cursor: pointer;
+}
+
+.contact {
+  font-weight: 600;
+}
 /* Paragraphs Styles */
 
 .text-lg {
@@ -197,7 +211,10 @@ h3 {
 }
 
 .navbar--active-content {
-  color: var(--primary);
+  color: var(--heading-color);
+  font-weight: 600;
+  background-color: var(--bg-shade);
+  text-decoration: underline;
 }
 /* Navbar Styles Ends */
 
@@ -256,6 +273,39 @@ h3 {
 .hero--section--img > img {
   width: 100%;
   height: 100%;
+  border-radius: 12px;
+}
+
+span.hero--section--name .typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid var(--heading-color); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation: typing 3s steps(20, end), blink-caret 0.8s infinite;
+  padding-left: 3px;
+  padding-right: 1px;
+  margin-right: 5px;
+  color: var(--primary);
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--primary);
+  }
 }
 
 /* Hero Section Ends */
@@ -263,7 +313,7 @@ h3 {
 /*Skills Section Styles*/
 .skills--section {
   display: flex;
-  padding: 149.33px 85.33px;
+  padding: 50px 85.33px 50px 85.33px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -298,7 +348,7 @@ h3 {
 }
 
 .skills--section--card:hover {
-  border-bottom: 4px solid var(--primary);
+  border-bottom: 4px solid var(--heading-color);
 }
 
 .skills--section--card:hover .skills--section--description {
@@ -340,3 +390,94 @@ h3 {
 }
 
 /*Skills Style Ends*/
+
+/* About Me */
+
+.about--section {
+  display: grid;
+  padding: 133.3px 85.3px;
+  align-items: center;
+  gap: 100px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about--section--img {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.about--section--img > img {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+}
+
+/* About Me Styles End*/
+
+/* Portfolio Styles*/
+.portfolio--section {
+  display: flex;
+  padding: 50px 85px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 80px;
+}
+
+.portfolio--container-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.portfolio--container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 21.3px;
+}
+.portfolio--section--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 42.6px;
+  width: 100%;
+}
+
+.portfolio--section--card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex: 1 0 0;
+  background: #fff;
+  box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.portfolio--section--card--content {
+  display: flex;
+  padding: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+.portfolio--section--title {
+  color: var(--heading-color);
+}
+.portfolio--link {
+  text-decoration: none;
+  display: flex;
+  gap: 16px;
+  border-bottom: 1.33px solid var(--heading-color);
+  padding-bottom: 10.6px;
+  font-weight: 600;
+}
+.portfolio--section--card:hover path {
+  stroke: var(--primary); /*#006b6a;*/
+}
+/* Portfolio Styles End*/

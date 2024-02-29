@@ -1,15 +1,8 @@
-import data from "../../data/index.json";
-
-const Skills = () => {
-  //   console.log(
-  //     `data ${data.skills.map((item, index) => {
-  //       console.log(`item ${JSON.stringify(item)} index ${index}`);
-  //     })}`
-  //   );
+const Skills = (data) => {
   return (
     <section className="skills--section" id="myskills">
       <div className="portfolio--container">
-        <p className="secton--title">My Skills</p>
+        {/* <p className="secton--title">My Skills</p> */}
         <h2 className="skills--section--heading">My Expertise</h2>
       </div>
       <div className="skills--section--container">

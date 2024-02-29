@@ -28,7 +28,9 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
       <div>
-        <img src="./img/logo.svg" alt="logo" />
+        <a href="#">
+          <img className="navbar--logo" src="./img/logo.svg" alt="logo" />
+        </a>
       </div>
       {/* Hamburger Menu */}
       <a
@@ -122,7 +124,7 @@ const Navbar = () => {
         offset={-70}
         duration={500}
         to="Contact"
-        className="btn btn-outline-primary"
+        className="btn btn-outline-primary contact"
       >
         Contact Me
       </Link>
