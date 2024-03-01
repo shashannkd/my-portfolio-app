@@ -6,6 +6,7 @@ import AboutMe from "../AboutMe.jsx";
 import TechStack from "../TechStack.jsx";
 
 import data from "../../data/index.json";
+import ContactMe from "../ContactMe.jsx";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Skills skills={data.skills} />
       <AboutMe />
       <TechStack />
+      <ContactMe />
     </>
   );
 };
