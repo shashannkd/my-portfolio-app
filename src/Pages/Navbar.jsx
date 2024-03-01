@@ -65,25 +65,10 @@ const Navbar = () => {
               smooth={true}
               offset={-70}
               duration={500}
-              to="MyPortfolio"
+              to="Skills"
               className="navbar--content"
             >
-              Portfolio
-            </Link>
-          </li>
-
-          <li>
-            <Link
-              onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              to="Interests"
-              className="navbar--content"
-            >
-              Interests
+              Skills
             </Link>
           </li>
           <li>
@@ -108,10 +93,25 @@ const Navbar = () => {
               smooth={true}
               offset={-70}
               duration={500}
-              to="Skills"
+              to="MyPortfolio"
               className="navbar--content"
             >
-              Skills
+              Portfolio
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="Interests"
+              className="navbar--content"
+            >
+              Interests
             </Link>
           </li>
         </ul>

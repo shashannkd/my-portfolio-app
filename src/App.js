@@ -2,8 +2,8 @@ import React from "react";
 import "./App.css";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./Pages/home/Navbar";
-import Home from "./Pages/home/Homescreen";
+import Navbar from "./Pages/Home/Navbar";
+import Home from "./Pages/Home/Homescreen";
 
 const App = () => {
   return (

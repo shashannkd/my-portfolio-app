@@ -21,11 +21,11 @@ p {
 :root {
   --primary: #4d2ec7;
   --heading-color: #282938;
-  --bg-shade: #f5fcff;
+  --bg-shade: #eee;
   --github: #e62872;
   --dark-blue: #1c1e53;
   --black: #000;
-  --white: #fff;
+  --bg-shade: #fff;
 }
 .btn {
   font-family: "Roboto";
@@ -51,29 +51,29 @@ p {
 
 .btn-outline-primary {
   color: var(--heading-color);
-  background-color: var(--white);
+  background-color: var(--bg-shade);
   border: 3px solid var(--heading-color);
 }
 
 .btn-outline-primary:hover {
-  color: var(--white);
+  color: var(--bg-shade);
   background-color: var(--heading-color);
 }
 .btn-primary {
-  color: var(--white);
+  color: var(--bg-shade);
   background-color: var(--primary);
   border: 3px solid var(--primary);
   font-weight: 700;
 }
 .btn-primary:hover {
   color: var(--primary);
-  background-color: var(--white);
+  background-color: var(--bg-shade);
   font-weight: 700;
   border: 3px solid var(--primary);
 }
 
 .btn-github {
-  color: var(--white);
+  color: var(--bg-shade);
   background-color: var(--primary);
   border: var(--primary);
   display: flex;
@@ -87,7 +87,7 @@ p {
 
 .btn-github:hover {
   color: var(--primary);
-  background-color: var(--white);
+  background-color: var(--bg-shade);
 }
 
 /* Global Styles CSS Ends */
@@ -155,13 +155,14 @@ img.navbar--logo:hover {
 
 .section--title {
   color: var(--heading-color);
-  font-size: 21px;
+  font-size: 30px;
   text-align: center;
   font-style: normal;
   font-weight: 600;
   line-height: 32px;
   display: flex;
   align-items: flex-start;
+  flex-direction: column;
 }
 
 /* Portfolio, Contact Me */
@@ -178,10 +179,10 @@ img.navbar--logo:hover {
 /* Navbar Styles Start */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 15px 85.333px;
-  background: var(--white);
+  background: var(--bg-shade);
   box-shadow: 0 5.33px 80px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
@@ -203,7 +204,7 @@ img.navbar--logo:hover {
 
 .navbar--content {
   color: var(--dark-blue);
-  font-size: 16px;
+  font-size: 21px;
   font-size: normal;
   font-weight: 400;
   line-height: 24px;
@@ -211,10 +212,9 @@ img.navbar--logo:hover {
 }
 
 .navbar--active-content {
-  color: var(--heading-color);
+  color: var(--primary);
   font-weight: 600;
   background-color: var(--bg-shade);
-  text-decoration: underline;
 }
 /* Navbar Styles Ends */
 
@@ -235,13 +235,14 @@ img.navbar--logo:hover {
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
+  padding-left: 60px;
 }
 
 .hero--section--content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 21.333px;
+  gap: 25px;
 }
 
 .hero--section--content-box > button {
@@ -281,7 +282,6 @@ span.hero--section--name .typewriter {
   border-right: 0.15em solid var(--heading-color); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   animation: typing 3s steps(20, end), blink-caret 0.8s infinite;
-  padding-left: 3px;
   padding-right: 1px;
   margin-right: 5px;
   color: var(--primary);
@@ -332,7 +332,7 @@ span.hero--section--name .typewriter {
   justify-content: center;
   align-items: flex-start;
   gap: 42.667px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .skills--section--card {
@@ -342,9 +342,11 @@ span.hero--section--name .typewriter {
   align-items: flex-start;
   gap: 32px;
   flex: 1 0 0;
-  border-radius: 7px;
+  border-radius: 10px;
   background: var(--bg-shade);
   min-height: 250px;
+  border-bottom: 4px solid var(--bg-shade);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .skills--section--card:hover {
@@ -362,7 +364,7 @@ span.hero--section--name .typewriter {
   align-items: center;
   gap: 13.3px;
   border-radius: 7px;
-  background-color: var(--white);
+  background-color: var(--bg-shade);
   box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
 }
 
