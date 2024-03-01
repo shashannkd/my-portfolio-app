@@ -483,3 +483,61 @@ span.hero--section--name .typewriter {
   stroke: var(--primary); /*#006b6a;*/
 }
 /* Portfolio Styles End*/
+/*Tech STack Styles*/
+
+.techstack--section {
+  display: grid;
+  padding: 50px 85px;
+  gap: 80px;
+}
+@keyframes slide {
+  100% {
+    transform: translateX(-80%);
+  }
+}
+.technologies--list {
+  overflow: hidden;
+  padding: 60px;
+  white-space: nowrap;
+  position: relative;
+  background-color: var(--bg-shade);
+}
+
+.technologies--list:before,
+.technologies--list::after {
+  position: absolute;
+  top: 0px;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.technologies--list::before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), var(--bg-shade));
+}
+
+.technologies--list::after {
+  right: 0;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    var(--bg-shade)
+  );
+}
+.technologies--list:hover .technologies--slide {
+  animation-play-state: paused;
+}
+.technologies--slide {
+  animation: 35s slide infinite linear;
+  display: inline-block;
+  transform: translate3d(0, 0, 0);
+}
+.technologies--slide img {
+  height: 160px;
+  margin: 0 40px;
+}
+.technologies--slide img:hover {
+  transform: translateY(-5px) scale(1.03);
+}

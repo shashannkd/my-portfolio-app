@@ -4,7 +4,7 @@ const Portfolio = (data) => {
       <div className="portfolio--container-box">
         <div className="portfolio--container">
           {/* <p className="sub--title">Recent Projects</p> */}
-          <h1 className="section--heading">My Portfolio</h1>
+          <h1 className="section--heading">Recent Projects</h1>
         </div>
         <div>
           <button className="btn btn-github">
@@ -37,7 +37,11 @@ const Portfolio = (data) => {
                 <h3 className="portfolio--section--title">{item.title}</h3>
                 <p className="text-md">{item.description}</p>
               </div>
-              <p className="text-sm portfolio--link">
+              <a
+                href="https://www.github.com/shashannkd?tab=repositories"
+                target="_blank"
+                className="text-sm portfolio--link"
+              >
                 {item.link}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +58,7 @@ const Portfolio = (data) => {
                     stroke-linejoin="round"
                   />
                 </svg>
-              </p>
+              </a>
             </div>
           </div>
         ))}
