@@ -787,6 +787,23 @@ a.instagram svg:hover {
     flex-direction: column-reverse;
     padding-bottom: 70px;
   }
+
+  .hero--section--content-box,
+  .portfolio--container-box,
+  .skills--container,
+  .hero--section--content,
+  .techstack--header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    padding: 0;
+  }
+  .hero--section--content .section--title,
+  .hero--section--name {
+    align-items: center;
+    justify-content: space-around;
+  }
   .hero--section--title,
   .hero--section-description,
   .footer--content {
@@ -797,6 +814,7 @@ a.instagram svg:hover {
   .about--section,
   .portfolio--section--container,
   .portfolio--container-box,
+  .technologies--list,
   .footer--link--container,
   .footer--items > ul,
   .footer--content--container {
@@ -806,6 +824,7 @@ a.instagram svg:hover {
   .skills--section,
   .portfolio--container,
   .hero--section--content,
+  .technologies--list,
   .hero--section--content--box {
     align-items: center;
   }
@@ -813,7 +832,7 @@ a.instagram svg:hover {
     gap: 30px;
   }
   .skills--section,
-  .testimonial--section,
+  .techstack--section,
   .contact--section,
   .footer--container {
     gap: 20px;
@@ -825,7 +844,7 @@ a.instagram svg:hover {
     padding-top: 0;
     padding-bottom: 0;
   }
-  .testimonial--section--card {
+  .techstack--section {
     padding: 25px;
   }
   .hero--section--title,
@@ -853,8 +872,140 @@ a.instagram svg:hover {
   .divider {
     margin: 20px;
   }
+
+  .portfolio--section--card,
+  .skills--section--card {
+    width: 800px;
+  }
+  .about--me--section-description,
+  p {
+    text-align: justify;
+  }
+
+  .hero--section-description {
+    width: 800px;
+  }
 }
 
+/* Smartphones (portrait) ----------- */
+@media (min-width: 320px) and (max-width: 480px) {
+  .hero--section--content-box,
+  .portfolio--container-box,
+  .skills--container,
+  .hero--section--content,
+  .techstack--header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    padding: 0;
+  }
+  .hero--section--content .section--title,
+  .hero--section--name {
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .about--section--img img {
+    width: 250px;
+    height: 250px;
+  }
+  .technologies--slide {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .technologies--slide img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .portfolio--section--card,
+  .skills--section--card,
+  .hero--section-description {
+    width: 250px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 600px) and (max-width: 800px) {
+  .hero--section--content-box,
+  .portfolio--container-box,
+  .skills--container,
+  .hero--section--content,
+  .techstack--header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    padding: 0;
+  }
+  .hero--section--content .section--title,
+  .hero--section--name {
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .about--section--img img {
+    width: 350px;
+    height: 350px;
+  }
+  .technologies--slide {
+    display: grid;
+    padding: 0;
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .technologies--slide img {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (min-width: 801px) and (max-width: 1024px) {
+  .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+  }
+  .hero--section--content-box,
+  .portfolio--container-box,
+  .skills--container,
+  .hero--section--content,
+  .techstack--header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    padding: 0;
+  }
+  .hero--section-description {
+    font-size: 20px;
+  }
+
+  .hero--section--content .section--title,
+  .hero--section--name {
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .about--section--img img {
+    width: 400px;
+    height: 400px;
+  }
+  .technologies--slide {
+    display: grid;
+    padding: 0;
+    grid-template-columns: repeat(3, auto);
+  }
+
+  .technologies--slide img {
+    width: 200px;
+    height: 200px;
+  }
+}
 /* Hamburger menu  */
 
 .nav__hamburger {
@@ -891,7 +1042,7 @@ a.instagram svg:hover {
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255);
-    top: -20rem;
+    top: -30rem;
     left: 0;
     width: 100%;
     transition: all ease-in-out 0.4s;

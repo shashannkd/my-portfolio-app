@@ -20,7 +20,7 @@ const HeroSection = () => {
             {data.description}
           </p>
         </div>
-        <div>
+        <div className="download-resume">
           <a
             target="_blank"
             className="btn btn-primary resume-button"

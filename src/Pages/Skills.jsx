@@ -1,7 +1,7 @@
 const Skills = (data) => {
   return (
     <section className="skills--section" id="my-skills">
-      <div className="portfolio--container">
+      <div className="skills--container">
         {/* <p className="secton--title">My Skills</p> */}
         <h2 className="skills--section--heading">My Expertise</h2>
       </div>

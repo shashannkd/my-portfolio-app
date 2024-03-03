@@ -32,7 +32,7 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
-      <div>
+      <div className="logo">
         <Link
           spy={true}
           smooth={true}
