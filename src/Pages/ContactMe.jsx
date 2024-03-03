@@ -6,7 +6,7 @@ const ContactMe = () => {
       <div>
         <h1 className="contact--title">Contact Me</h1>
         {/* <p className="sub--title">Get In Touch</p> */}
-        <p className="text-lg">
+        <p className="text-md">
           This feature is being developed. You wont be able send an email as of
           now. Try messaging me on my{" "}
           <a href="https://www.linkedin.com/in/shashannkd/">Linkedin</a>{" "}

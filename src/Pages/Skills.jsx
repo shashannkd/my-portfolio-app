@@ -9,7 +9,7 @@ const Skills = (data) => {
         {data?.skills?.map((item, index) => (
           <div key={index} className="skills--section--card">
             <div className="skills--section--img">
-              <img src={item.src} alt="Product Chain" />
+              <img src={item.src} title={item.title} />
             </div>
             <div className="skills--section--card--content">
               <h3 className="skills--section--title">{item.title}</h3>

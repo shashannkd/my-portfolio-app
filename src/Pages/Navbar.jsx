@@ -33,9 +33,17 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
       <div>
-        <a href="#">
+        <Link
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          to="hero-section"
+          className="navbar--content"
+          title="Home"
+        >
           <img className="navbar--logo" src="./img/logo.svg" alt="logo" />
-        </a>
+        </Link>
       </div>
       {/* Hamburger Menu */}
       <a
