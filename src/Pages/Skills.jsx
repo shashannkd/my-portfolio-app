@@ -1,6 +1,6 @@
 const Skills = (data) => {
   return (
-    <section className="skills--section" id="myskills">
+    <section className="skills--section" id="my-skills">
       <div className="portfolio--container">
         {/* <p className="secton--title">My Skills</p> */}
         <h2 className="skills--section--heading">My Expertise</h2>

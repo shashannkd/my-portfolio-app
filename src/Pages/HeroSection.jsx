@@ -1,14 +1,15 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 const HeroSection = () => {
   return (
-    <section id="heroSection" className="hero--section">
+    <section id="hero-section" className="hero--section">
       <div className="hero--section--content-box">
         <div className="hero--section--content">
           <h4 className="section--title">
             Hey, I'm
             <span className="hero--section--name ">
-              <h4 className="typewriter">Shashannk Deshpande</h4>
+              <h4 className="typewriter">Shashannk Deshpande.</h4>
             </span>
           </h4>
           <h1 className="hero--section--title">
@@ -21,7 +22,16 @@ const HeroSection = () => {
           </p>
         </div>
         <div>
-          <button className="btn btn-primary">Get in Touch</button>
+          <Link
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            to="contact-me"
+            className="btn btn-primary get-in-touch"
+          >
+            Get in Touch
+          </Link>
         </div>
       </div>
       <div className="hero--section--img">

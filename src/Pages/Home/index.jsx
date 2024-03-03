@@ -7,6 +7,7 @@ import TechStack from "../TechStack.jsx";
 
 import data from "../../data/index.json";
 import ContactMe from "../ContactMe.jsx";
+import Footer from "../Footer.jsx";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <AboutMe />
       <TechStack />
       <ContactMe />
+      <Footer />
     </>
   );
 };

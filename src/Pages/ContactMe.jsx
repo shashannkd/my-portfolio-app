@@ -2,18 +2,21 @@ import React from "react";
 
 const ContactMe = () => {
   return (
-    <section id="Contact" className="contact--section">
+    <section id="contact-me" className="contact--section">
       <div>
         <h1 className="contact--title">Contact Me</h1>
         {/* <p className="sub--title">Get In Touch</p> */}
         <p className="text-lg">
-          Wanna get in touch with me? Just send an email. Thank You :)
+          This feature is being developed. You wont be able send an email as of
+          now. Try messaging me on my{" "}
+          <a href="https://www.linkedin.com/in/shashannkd/">Linkedin</a>{" "}
+          instead. Thank You :)
         </p>
       </div>
       <form className="contact--form--container">
         <div className="container">
           <label htmlFor="first-name" className="contact--label">
-            <span className="text-md">First Name</span>
+            <span className="text-md label-text">First Name</span>
             <input
               type="text"
               className="contact--input text-md"
@@ -23,7 +26,7 @@ const ContactMe = () => {
             />
           </label>
           <label htmlFor="last-name" className="contact--label">
-            <span className="text-md">Last Name</span>
+            <span className="text-md label-text">Last Name</span>
             <input
               type="text"
               className="contact--input text-md"
@@ -32,20 +35,19 @@ const ContactMe = () => {
               required
             />
           </label>
-          <label htmlFor="email" className="contact--label">
-            <span className="text-md">Email</span>
-            <input
-              type="email"
-              className="contact--input text-md"
-              name="email"
-              id="email"
-              required
-            />
-          </label>
         </div>
-
+        <label htmlFor="email" className="contact--label">
+          <span className="text-md label-text">Email</span>
+          <input
+            type="email"
+            className="contact--input text-md"
+            name="email"
+            id="email"
+            required
+          />
+        </label>
         <label htmlFor="message" className="contact--label">
-          <span className="text-md">Message</span>
+          <span className="text-md label-text">Message</span>
           <textarea
             className="contact--input text-md"
             id="message"
