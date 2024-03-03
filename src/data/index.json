@@ -2,21 +2,21 @@
   "skills": [
     {
       "id": "1",
-      "src": "./img/product-chain-1.png",
-      "title": "Front-End Development",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "src": "./img/backend-dev.png",
+      "title": "Back-End Development",
+      "description": "Seasoned backend developer with nearly 5 years of experience adept in integrating databases, proficient in Java Spring Boot, Python Flask and Django, and Node.js."
     },
     {
       "id": "2",
-      "src": "./img/tag-1.png",
-      "title": "Back-End Development",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "src": "./img/front-end-dev.png",
+      "title": "Front-End Development",
+      "description": "Skilled in front-end development with React.js, specializing in responsive design and user-centric experiences."
     },
     {
       "id": "3",
-      "src": "./img/feather-pen-2.png",
+      "src": "./img/api-design.png",
       "title": "API Design",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "description": "Experienced in API and system design with a strong interest, backed by 5 years of expertise in crafting scalable and efficient solutions."
     }
   ],
   "portfolio": [
@@ -24,22 +24,25 @@
       "id": "1",
       "src": "./img/placeholder-image.png",
       "title": "Portfolio",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "description": "A dynamic portfolio project showcasing my skills, built with React.js and hosted on Netlify for seamless accessibility.",
+      "link": "View In Github",
+      "hyperlink": "https://github.com/shashannkd/my-portfolio-app"
     },
     {
       "id": "2",
       "src": "./img/placeholder-image-1.png",
       "title": "Dojo Blog",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "description": "A full-stack blog project leveraging React.js for the front end, with ongoing development of the Python Django back end for enhanced functionality and interactivity.",
+      "link": "View In Github",
+      "hyperlink": "https://github.com/shashannkd/dojo-blog"
     },
     {
       "id": "3",
       "src": "./img/placeholder-image-2.png",
       "title": "Movie Review Application",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "description": "A full-stack movie review application featuring a Java 17 Spring Boot backend with MySQL database, while the front end is under development using React.js and Redux for seamless user experience.",
+      "link": "View In Github",
+      "hyperlink": "https://github.com/shashannkd/movie-review-application"
     }
   ],
   "interests": [

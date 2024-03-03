@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
-  const { navActive, setNavActive } = useState(false);
+  const [navActive, setNavActive] = useState(false);
+
   const toggleNav = () => {
     setNavActive(!navActive);
   };
@@ -17,6 +18,10 @@ const Navbar = () => {
       }
     };
     window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   useEffect(() => {
@@ -27,10 +32,18 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
-      <div>
-        <a href="#">
+      <div className="logo">
+        <Link
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          to="hero-section"
+          className="navbar--content"
+          title="Home"
+        >
           <img className="navbar--logo" src="./img/logo.svg" alt="logo" />
-        </a>
+        </Link>
       </div>
       {/* Hamburger Menu */}
       <a
@@ -51,7 +64,7 @@ const Navbar = () => {
               smooth={true}
               offset={-70}
               duration={500}
-              to="heroSection"
+              to="hero-section"
               className="navbar--content"
             >
               Home
@@ -59,16 +72,16 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              onClick={closeMenu}
+              onClick={(e) => setNavActive(false)}
               activeClass="navbar--active-content"
               spy={true}
               smooth={true}
               offset={-70}
               duration={500}
-              to="MyPortfolio"
+              to="my-portfolio"
               className="navbar--content"
             >
-              Portfolio
+              Projects
             </Link>
           </li>
 
@@ -80,10 +93,10 @@ const Navbar = () => {
               smooth={true}
               offset={-70}
               duration={500}
-              to="Interests"
+              to="my-skills"
               className="navbar--content"
             >
-              Interests
+              Skills
             </Link>
           </li>
           <li>
@@ -94,12 +107,13 @@ const Navbar = () => {
               smooth={true}
               offset={-70}
               duration={500}
-              to="aboutMe"
+              to="about-me"
               className="navbar--content"
             >
               About Me
             </Link>
           </li>
+
           <li>
             <Link
               onClick={closeMenu}
@@ -108,22 +122,21 @@ const Navbar = () => {
               smooth={true}
               offset={-70}
               duration={500}
-              to="Skills"
+              to="techstack"
               className="navbar--content"
             >
-              Skills
+              Tech Stack
             </Link>
           </li>
         </ul>
       </div>
       <Link
         onClick={closeMenu}
-        activeClass="navbar--active-content"
         spy={true}
         smooth={true}
         offset={-70}
         duration={500}
-        to="Contact"
+        to="contact-me"
         className="btn btn-outline-primary contact"
       >
         Contact Me
