@@ -1,1 +1,0 @@
-<Footer className="jsx"></Footer>
