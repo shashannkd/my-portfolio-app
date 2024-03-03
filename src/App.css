@@ -529,9 +529,6 @@ span.hero--section--name .typewriter {
 }
 
 .visit-my-github-link svg {
-}
-
-.visit-my-github-link svg {
   fill: var(--bg-shade);
 }
 
@@ -879,7 +876,7 @@ a.instagram svg:hover {
   }
   .about--me--section-description,
   p {
-    text-align: justify;
+    text-align: left;
   }
 
   .hero--section-description {
@@ -928,6 +925,10 @@ a.instagram svg:hover {
   .hero--section-description {
     width: 250px;
   }
+
+  .technologies--list {
+    display: contents;
+  }
 }
 
 /* Tablet */
@@ -963,8 +964,18 @@ a.instagram svg:hover {
     width: 150px;
     height: 150px;
   }
+
+  .technologies--list {
+    display: contents;
+  }
+
+  .portfolio--section--card,
+  .skills--section--card,
+  .hero--section-description {
+    width: 650px;
+  }
 }
-@media (min-width: 801px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .logo {
     display: flex;
     flex-direction: row;
@@ -1004,6 +1015,16 @@ a.instagram svg:hover {
   .technologies--slide img {
     width: 200px;
     height: 200px;
+  }
+
+  .technologies--list {
+    display: contents;
+  }
+
+  .portfolio--section--card,
+  .skills--section--card,
+  .hero--section-description {
+    width: 650px;
   }
 }
 /* Hamburger menu  */
