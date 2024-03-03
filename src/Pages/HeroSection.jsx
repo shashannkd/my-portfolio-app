@@ -24,7 +24,7 @@ const HeroSection = () => {
           <a
             target="_blank"
             className="btn btn-primary resume-button"
-            href="https://drive.google.com/file/d/1UVxClxteL7oeoOCyV4l6FodEXAkytexy/view?usp=sharing"
+            href={data.resumeLink}
           >
             Download Resume
           </a>
